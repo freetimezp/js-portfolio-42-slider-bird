@@ -225,11 +225,41 @@ body {
     }
 }
 
+#next {
+    position: absolute;
+    z-index: 10000000;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    border: none;
+    background-color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
 
+#next:hover {
+    background-color: rgba(123, 163, 15, 0.45);
+    color: #fff;
+}
 
+.start::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: yellow;
+    z-index: 111;
+    animation: time 3s ease-in-out 1 forwards;
+}
 
-
-
+@keyframes time {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
 
 
 
